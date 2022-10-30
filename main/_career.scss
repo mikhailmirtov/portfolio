@@ -1,0 +1,207 @@
+.image__career{
+    background: url(../image/career/lamp.svg) center / contain no-repeat;
+}
+
+.image__career:hover{
+    background: url(../image/career/lamp_activ.svg) top / contain no-repeat;
+}
+.career__vacansiy{
+    padding: 170px 0;
+}
+.career__title{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $colorSubTitle;
+}
+.career__title:not(:last-child){
+    margin-bottom: 60px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-color: #FAFAFA;
+    @media (min-width: 755px) {
+            margin-right: -25px;
+            margin-bottom: -25px;
+        }
+
+    @media (min-width: 1170px){
+        margin-right: -45px;
+        margin-bottom: -45px;
+    }
+}
+// .card{
+//     display: grid;
+//     grid-template-columns: repeat(3, 25%);
+//     grid-template-rows: repeat(3, 1fr);
+//     // justify-items: center;
+//     align-items: center;
+//     gap: 50px;
+// }
+.career__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 250px 25px 25px 25px;
+
+    background-color: #fff;
+    color: #000;
+
+    overflow: hidden;
+
+    @media (min-width: 755px){
+        flex-basis: calc((100% / 2) - 25px);
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 1170px){
+        flex-basis: calc((100% / 3) - 45px);
+        margin-right: 45px;
+        margin-bottom: 45px;
+    }
+}
+.career__link:hover {
+    background-color: $colorBgButton;
+    color: #fff;
+}
+.career__link:hover .arrow{
+    background-color: $colorBgButton;
+    color: #fff;
+}
+
+.career__link:hover .text__link-arrow{
+    transform: translateX(-10px);
+    transform: scale(1.1);
+}
+.text__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-right: 20px;
+    max-width: 255px;
+    width: 100%;
+    
+}
+.text__link-arrow{
+    position: relative;
+    padding: 30px 0;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-right: 20px;
+    color: #fff;
+
+    transform: translateX(50px);
+    transition: all 250ms linear;
+
+}
+.text__link-arrow::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 15px;
+    background: url(../image/game/Arrow_right.svg) center / contain no-repeat;
+}
+.career__prime{
+    @media (min-width: 876px){
+        padding-bottom: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 50px;
+    }
+    padding-bottom: 50px;
+}
+.prime__wrapper{
+    @media (min-width: 876px){
+        justify-items: center;
+            align-self: center;
+    }
+}
+@media (max-width: 875.99px) {
+    .prime__wrapper:not(:last-child) {
+        margin-bottom: 55px;
+    }
+}
+
+.prime__title{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000000;
+}
+.prime__title:not(:last-child){
+    margin-bottom: 24px;
+}
+.prime__text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #000000;
+}
+.prime__items{
+    @media (max-width: 470px){
+            text-align: center;
+    }
+    
+    @media (min-width: 470px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+.prime__item{
+    @media (max-width: 470px){
+    &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+}
+.prime__icons{
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+        
+    
+        @media (max-width: 396px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        @media (min-width: 1280px) {
+            max-width: 100px;
+            max-width: 100px;
+        }
+}
+.prime__icons img{
+    object-fit: cover;
+    max-width: 69px;
+    max-height: 69px;
+}
+.item__title{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #000000;
+}
+.item__title:not(:last-child){
+    margin-bottom: 14px;
+}
+.item__text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7D7A9A;
+}
+.items__link{
+    margin-top: 50px;
+}

@@ -1,0 +1,56 @@
+.vacansia__link{
+        @media(min-width: 500px) {
+                margin-bottom: 100px;
+            }
+    @media(min-width: 1060px) {
+        margin-bottom: 150px;
+    }
+}
+.vacansia__content{
+    padding: 50px 0;
+
+
+    @media(min-width: 1060px){
+        max-width: 1060px;
+        padding: 100px 0;
+    }
+}
+.vacansia__text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $colorText;
+    @media(min-width: 1060px) {
+        font-size: 22px;
+        }
+}
+.vacansia__text:not(:last-child){
+    margin-bottom: 30px;
+}
+.vacansia__title{
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.25;
+    color: $colorSubTitle;
+    @media(min-width: 1060px) {
+            font-size: 26px;
+        }
+}
+.vacansia__title:not(:last-child){
+    margin-bottom: 20px;
+}
+.vacansia__items:not(:last-child){
+    margin-bottom: 20px;
+}
+.vacansia__item{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $colorText;
+        @media(min-width: 1060px) {
+                font-size: 22px;
+            }
+}
+.vacansia__item:not(:last-child){
+    margin-bottom: 20px;
+}

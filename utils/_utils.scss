@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    background: #fafafa;
+    font-size: 14px;
+    color: #252b42;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+[class*="__container"] {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+@media(max-width: 1025px){
+
+}
+@media(min-width: 1026px) {
+    [class*="__container"] {
+        padding: 0px 15px 0 50px;
+    }
+}
+
+$colorTitle: #000;
+$colorSubTitle: #000;
+$colorText: #000;
+$colorButton: #fff;
+$colorBgButton: #ce0002;
+$colorBgHoverButton: #FE0002;
+$colorFooter: #7E7E7E;

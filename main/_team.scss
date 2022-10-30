@@ -1,0 +1,122 @@
+.team__all-content {
+    @media (min-width: 500px) and (max-width: 1349px) {
+        margin-left: 7vh;
+    }
+
+    @media (min-width: 1300px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 50px;
+    }
+}
+.team__all-content-p{
+    @media (min-width: 500px) and (max-width: 1349px) {
+        margin-left: 7vh;
+    }
+}
+.team__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.25;
+    color: $colorTitle;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 1070px){
+        font-size: 72px;
+    }
+}
+@media (min-width: 800px) {
+    .team__title:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+.team__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $colorText;
+
+    @media (min-width: 1070px){
+        font-size: 24px;
+    }
+    
+    @media (min-width: 1300px){
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 1299.99px) {
+    .team__text:not(:last-child) {
+        margin-bottom: 60px;
+    }
+}
+// .team__text:not(:last-child){
+//     margin-bottom: 20px;
+// }
+    
+// .main__icon{
+//     display: grid;
+// }
+.team__items {
+    @media (max-width: 396px) {
+        width: 100%;
+        text-align: center;
+    }
+
+    @media (min-width: 397px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+// .team__item {
+//     flex: 0 1 50%;
+// }
+// .team__item:not(:last-child){
+//     margin-bottom: 20px;
+// }
+// .team__item>*:not(:last-child) {
+//     margin-bottom: 16px;
+// }
+.decor__icon {
+    @extend %flexCentered;
+    width: 85px;
+    height: 85px;
+    background-color: #E8D935;
+    
+    @media (max-width: 396px){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 1280px) {
+        width: 100px;
+        width: 100px;
+    }
+}
+
+.team__sub-title{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.25;
+    color: $colorTitle;
+
+    @media (min-width: 1070px) {
+        font-size: 44px;
+    }
+}
+
+.team__sub-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $colorText;
+
+    @media (min-width: 1070px) {
+        font-size: 24px;
+    }
+}
